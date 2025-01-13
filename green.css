@@ -129,8 +129,8 @@ header {
     gap: 4px;
 }
 
-.Login:hover{
-    background-color: rgba(42,108,7,0.87);
+.Login:hover {
+    background-color: rgba(42, 108, 7, 0.87);
     transition: all 0.3s ease-in-out;
 }
 
@@ -203,8 +203,8 @@ header:after {
     font: 600 16px/1.1 "Roboto", Serif;
 }
 
-.button_shop:hover{
-    background-color: rgba(42,108,7,0.87);
+.button_shop:hover {
+    background-color: rgba(42, 108, 7, 0.87);
     transition: all 0.3s ease-in-out;
 }
 

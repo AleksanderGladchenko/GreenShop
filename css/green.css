@@ -32,6 +32,12 @@ header nav ul li a {
     color: #3d3d3d;
 }
 
+.container_login {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 header .login {
     border-radius: 6px;
     background: #46a358;
@@ -60,6 +66,10 @@ header .login:hover svg {
 
 .banner {
     margin: 0 0 0 40px;
+}
+
+.banner .container {
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
 }
 
 .container article h3 {
@@ -92,10 +102,10 @@ header .login:hover svg {
     padding-bottom: 44px;
 }
 
-.container article a{
+.container article a {
     border-radius: 6px;
     background: #46a358;
-    padding: 7px 17px;
+    padding: 12px 20px;
     align-items: center;
 
     font-weight: 500;

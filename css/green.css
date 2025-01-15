@@ -64,11 +64,9 @@ header .login:hover svg {
     stroke: #46a358;
 }
 
-.banner {
-    margin: 0 0 0 40px;
-}
 
 .banner .container {
+    padding: 0 0 0 40px;
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
 }
 

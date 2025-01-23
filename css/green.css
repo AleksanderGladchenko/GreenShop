@@ -3,8 +3,48 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    color: black;
     font-family: "Cera Pro", sans-serif;
+    list-style: none;
 }
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/Fontspring-DEMO-cerapro-black.otf') format('otf'),
+    url('../fonts/Fontspring-DEMO-cerapro-blackitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/Fontspring-DEMO-cerapro-bold.otf') format('otf'),
+    url('../fonts/Fontspring-DEMO-cerapro-bolditalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/Fontspring-DEMO-cerapro-light.otf') format('otf'),
+    url('../fonts/Fontspring-DEMO-cerapro-lightitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/Fontspring-DEMO-cerapro-medium.otf') format('otf'),
+    url('../fonts/Fontspring-DEMO-cerapro-mediumitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/Fontspring-DEMO-cerapro-regular.otf') format('otf'),
+    url('../fonts/Fontspring-DEMO-cerapro-regularitalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/Fontspring-DEMO-cerapro-thin.otf') format('otf'),
+    url('../fonts/Fontspring-DEMO-cerapro-thinitalic.otf') format('otf');
+}
+
+/* И так далее для каждого шрифта */
 
 .container {
     max-width: 1200px;
@@ -22,7 +62,6 @@ header {
 header nav ul {
     display: flex;
     align-items: center;
-    list-style: none;
     gap: 50px;
 }
 
@@ -64,9 +103,14 @@ header .login:hover svg {
     stroke: #46a358;
 }
 
+main {
+    max-width: 1200px;
+    margin: auto;
+}
 
 .banner .container {
     padding: 0 0 0 40px;
+    margin-bottom: 40px;
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
 }
 
@@ -116,3 +160,114 @@ header .login:hover svg {
 .container article a:hover {
     background-color: rgb(60, 117, 30);
 }
+
+.categories_products {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.categories_products_block_left {
+    padding: 14px 24px 0 30px;
+    align-items: center;
+    height: 1244px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+}
+
+.categories_products_block_left_categories li {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.categories_products_block_left h1 {
+    margin-left: -160px;
+}
+
+.categories_products_block_left_categories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-bottom: 377px;
+}
+
+.categories_products_block-right_short_by {
+    display: flex;
+    padding-bottom: 38px;
+}
+
+.categories_products_block-right_short_by_left ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 37px;
+    padding-right: 385px;
+}
+
+.categories_products_block-right_short_by_right select {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #070d13;
+}
+
+.categories_products_block-right_products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+}
+
+.categories_products_block-right_products img {
+    padding-bottom: 12px;
+    height: 300px;
+    width: 258px;
+}
+
+.categories_products_block-right_products_block p:nth-child(3) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+
+.categories_products_block-right_products_block p:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    padding-bottom: 6px;
+}
+
+.categories_products_block-right_products_block {
+    margin-bottom: 70px;
+}
+
+.categories_products_block-right_products_block:nth-child(9) {
+    margin-bottom: 90px;
+}
+
+.categories_products_pages nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+
+.categories_products_pages nav ul li button {
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+

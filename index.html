@@ -10,6 +10,9 @@
 </head>
 <body>
 
+<!-- ========================= -->
+<!--  (Header)      -->
+<!-- ========================= -->
 <header>
 
     <div class="container">
@@ -19,29 +22,25 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Shop</a>
-                </li>
-                <li>
-                    <a href="#">Plant Care</a>
-                </li>
-                <li>
-                    <a href="#">Blogs</a>
-                </li>
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Shop">Shop</a></li>
+                <li><a href="#" title="Plant Care">Plant Care</a></li>
+                <li><a href="#" title="Blogs">Blogs</a></li>
             </ul>
         </nav>
 
         <div class="container_login">
 
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828089 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59653 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9777 19.2046C19.8165 19.9651 18.9108 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98262 2.00065C5.12292 1.99503 2.00781 5.09067 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9506 12.8504 15.9605 8.98677Z"
-                      fill="#3D3D3D"/>
-            </svg>
+            <a href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828089 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59653 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9777 19.2046C19.8165 19.9651 18.9108 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98262 2.00065C5.12292 1.99503 2.00781 5.09067 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9506 12.8504 15.9605 8.98677Z"
+                          fill="#3D3D3D"/>
+                </svg>
+            </a>
 
-            <img src="img/basket.svg" alt="basket">
+            <a href="#">
+                <img src="img/basket.svg" alt="basket">
+            </a>
 
             <a href="#" class="login">
 
@@ -53,7 +52,8 @@
                     <path d="M13.634 6.35817C13.359 3.37484 12.2424 2.2915 7.8007 2.2915C1.8832 2.2915 1.8832 4.2165 1.8832 9.99984C1.8832 15.7832 1.8832 17.7082 7.8007 17.7082C12.2424 17.7082 13.359 16.6248 13.634 13.6415"
                           stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                Login</a>
+                Login
+            </a>
 
         </div>
 
@@ -61,6 +61,9 @@
 
 </header>
 
+<!-- ========================= -->
+<!-- (Main)  -->
+<!-- ========================= -->
 <main>
     <section class="banner">
         <div class="container">
@@ -79,60 +82,57 @@
         </div>
     </section>
 
-    <!--   start categories_products------------------------------------------------------------------------------------->
-
+    <!-- ========================= -->
+    <!-- products  -->
+    <!-- ========================= -->
     <section class="categories_products">
 
         <div class="categories_products_block_left">
 
-            <h1>Categories</h1>
+            <p>Categories</p>
 
-            <nav class="categories_products_block_left_categories">
+            <ul class="categories_products_block_left_categories">
 
-                <ul>
-                    <li>
-                        <a href="#">House Plants</a>
-                        <p>(33)</p>
-                    </li>
-                    <li>
-                        <a href="#">Potter Plants</a>
-                        <p>(12)</p>
-                    </li>
-                    <li>
-                        <a href="#">Seeds</a>
-                        <p>(65)</p>
-                    </li>
-                    <li>
-                        <a href="#">Small Plants</a>
-                        <p>(39)</p>
-                    </li>
-                    <li>
-                        <a href="#">Big Plants</a>
-                        <p>(23)</p>
-                    </li>
-                    <li>
-                        <a href="#">Succulents</a>
-                        <p>(17)</p>
-                    </li>
-                    <li>
-                        <a href="#">Trerrariums</a>
-                        <p>(19)</p>
-                    </li>
-                    <li>
-                        <a href="#">Gardening</a>
-                        <p>(13)</p>
-                    </li>
-                    <li>
-                        <a href="#">Accessories</a>
-                        <p>(18)</p>
-                    </li>
+                <li>
+                    <a href="#">House Plants</a>
+                    <a href="#">(33)</a>
+                </li>
+                <li>
+                    <a href="#">Potter Plants</a>
+                    <a href="#">(12)</a>
+                </li>
+                <li>
+                    <a href="#">Seeds</a>
+                    <a href="#">(65)</a>
+                </li>
+                <li>
+                    <a href="#">Small Plants</a>
+                    <a href="#">(39)</a>
+                </li>
+                <li>
+                    <a href="#">Big Plants</a>
+                    <a href="#">(23)</a>
+                </li>
+                <li>
+                    <a href="#">Succulents</a>
+                    <a href="#">(17)</a>
+                </li>
+                <li>
+                    <a href="#">Terrariums</a>
+                    <a href="#">(19)</a>
+                </li>
+                <li>
+                    <a href="#">Gardening</a>
+                    <a href="#">(13)</a>
+                </li>
+                <li>
+                    <a href="#">Accessories</a>
+                    <a href="#">(18)</a>
+                </li>
 
-                </ul>
-
-            </nav>
+            </ul>
 
             <img src="img/sale.png" alt="sale">
-
 
         </div>
 
@@ -140,31 +140,23 @@
 
             <div class="categories_products_block-right_short_by">
 
-                <nav class="categories_products_block-right_short_by_left">
-
+                <div class="categories_products_block-right_short_by_left_nav">
                     <ul>
-                        <li>
-                            <a href="#">All Plants</a>
-                        </li>
-                        <li>
-                            <a href="#">New Arrivals</a>
-                        </li>
-                        <li>
-                            <a href="#">Sale</a>
-                        </li>
+                        <li><a href="#" title="All Plants">All Plants</a></li>
+                        <li><a href="#" title="New Arrivals">New Arrivals</a></li>
+                        <li><a href="#" title="Sale">Sale</a></li>
                     </ul>
-                </nav>
+
+                </div>
 
                 <div class="categories_products_block-right_short_by_right">
 
                     <span>Short by:</span>
-                    <label>
-                        <select>
-                            <option>Default sorting</option>
-                            <option>item 2</option>
-                            <option>item 3</option>
-                        </select>
-                    </label>
+                    <select>
+                        <option>Default sorting</option>
+                        <option>item 2</option>
+                        <option>item 3</option>
+                    </select>
 
                 </div>
 
@@ -177,114 +169,162 @@
                         <img src="img/1%20img.png" alt="1_flower">
                         <p>Barberton Daisy</p>
                         <p>$119.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
                 <div class="categories_products_block-right_products_block">
                     <a href="">
-                        <img src="img/2%20img.png" alt="1_flower">
+                        <img src="img/2%20img.png" alt="2_flower">
                         <p>Angel Wing Begonia</p>
                         <p>$169.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
                 <div class="categories_products_block-right_products_block">
                     <a href="">
-                        <img src="img/3%20img.png" alt="1_flower">
+                        <img src="img/3%20img.png" alt="3_flower">
                         <p>Beach Spider Lily</p>
                         <p>$129.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
                 <div class="categories_products_block-right_products_block">
                     <a href="">
-                        <img src="img/4%20img.png" alt="1_flower">
+                        <img src="img/4%20img.png" alt="4_flower">
                         <p>Beach Spider Lily</p>
                         <p>$129.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
                 <div class="categories_products_block-right_products_block">
                     <a href="">
-                        <img src="img/5%20img.png" alt="1_flower">
+                        <img src="img/5%20img.png" alt="5_flower">
                         <p>Blushing Bromeliad</p>
                         <p>$139.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
                 <div class="categories_products_block-right_products_block">
                     <a href="">
-                        <img src="img/6%20img.png" alt="1_flower">
+                        <img src="img/6%20img.png" alt="6_flower">
                         <p>Aluminum Plant</p>
                         <p>$179.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
                 <div class="categories_products_block-right_products_block">
                     <a href="">
-                        <img src="img/7%20img.png" alt="1_flower">
+                        <img src="img/7%20img.png" alt="7_flower">
                         <p>Bird's Nest Fern</p>
-                        <p>$99.00</p>
+                        <p>$ 149.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
                 <div class="categories_products_block-right_products_block">
                     <a href="">
-                        <img src="img/8%20img.png" alt="1_flower">
-                        <p>Broadleaf Lady Palm</p>
-                        <p>$59.00</p>
-                    </a>
-                </div>
-                <div class="categories_products_block-right_products_block">
-                    <a href="">
-                        <img src="img/9%20img.png" alt="1_flower">
+                        <img src="img/8%20img.png" alt="8_flower">
                         <p>Chinese Evergreen</p>
-                        <p>$39.00</p>
+                        <p>$159.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
                     </a>
                 </div>
+                <div class="categories_products_block-right_products_block">
+                    <a href="">
+                        <img src="img/9%20img.png" alt="9_flower">
+                        <p>Chinese Evergreen</p>
+                        <p>$159.00</p>
+                        <div class="icons-link">
+                            <a href="#"><img src="img/icon1.svg" alt="Icon1"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Icon2"></a>
+                            <a href="#"><img src="img/icon3.svg" alt="Icon3"></a>
+                        </div>
+                    </a>
 
+                </div>
             </div>
-
         </div>
     </section>
 
-    <div class="categories_products_pages">
-
-        <nav>
-
-            <ul>
-                <li>
-                    <button>
-                        1
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        2
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        3
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        4
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.375 3.75C6.375 3.75 11.625 6.858 11.625 9C11.625 11.1413 6.375 14.25 6.375 14.25"
-                                  stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-
-        </nav>
-
-    </div>
+    <ul class="categories_products_pages">
+        <li>
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li>
+            <a href="#">
+                >
+            </a>
+        </li>
+    </ul>
 
 
     <!--  end  categories_products------------------------------------------------------------------------------------->
 
+    <div class="mask-group">
+
+        <div class="mask-group-block">
+            <p>Summer cactus<br>
+                & succulents</p>
+            <p>We are an online plant shop offering a wide
+                <br>range of cheap and trendy plants</p>
+            <a href="#">
+                <img src="img/btn.svg" alt="btn">
+            </a>
+            <img src="img/222.svg" alt="">
+        </div>
+
+        <div class="mask-group-block">
+            <p>Styling Trends<br>
+                & much more</p>
+            <p>We are an online plant shop offering a wide
+                <br>range of cheap and trendy plants</p>
+            <a href="#">
+                <img src="img/btn.svg" alt="btn">
+            </a>
+            <img src="img/image%2015.png" alt="">
+        </div>
+    </div>
 
 </main>
-
 </body>
 </html>

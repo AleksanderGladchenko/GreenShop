@@ -53,7 +53,7 @@
 /* ========================= */
 /* Container Styles          */
 /* ========================= */
-.container {
+.container, .container-flower {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -66,6 +66,7 @@
 /* Header Styles             */
 /* ========================= */
 header {
+    margin-bottom: 12px;
     padding-top: 30px;
 }
 
@@ -75,6 +76,7 @@ header {
 header nav ul, .categories_products_block-right_short_by_left_nav ul {
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
 header nav ul li, .categories_products_block-right_short_by_left_nav ul li {
@@ -86,6 +88,7 @@ header nav ul li a, .categories_products_block-right_short_by_left_nav ul li a {
     font-weight: 400;
     color: #3d3d3d;
     line-height: 50px;
+    font-size: 16px;
 }
 
 header nav ul li a:hover, .categories_products_block-right_short_by_left_nav ul li a:hover {
@@ -120,6 +123,57 @@ header nav ul li a::after, .categories_products_block-right_short_by_left_nav ul
     overflow: hidden;
     height: 0;
     transition: opacity 0.3s, transform 0.3s linear;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    padding-top: 40px;
+}
+
+header nav ul li .dropdown a:before {
+    display: none;
+}
+
+header nav ul li .dropdown a {
+    padding: 8px 14px;
+    width: 188px;
+    display: inline-block;
+    background: #EDF6EE;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    line-height: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+header nav ul li .dropdown a:hover {
+    background-color: #1a712a;
+    color: white;
+}
+header nav li .dropdown li:last-of-type a:after{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    background-image: url("../img/arow-header.svg");
+}
+header nav ul li .dropdown a:hover:after {
+    background-image: url("../img/arow_hover-header.svg");
+    transform: rotate(180deg);
+}
+
+header nav ul li.drop:hover .dropdown{
+    display: block;
+
 }
 
 /* ========================= */
@@ -424,20 +478,20 @@ main {
     width: 20px;
     height: 20px;
     bottom: 190px;
-    transition: .3s ease;
+    transition: .3s ease
+
+}
+
+.icons-link a:hover img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(200%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
 
 .icons-link a:hover {
     transform: scale(1.3);
 }
 
-
-.icons-link img {
-    width: 100%;
-    height: auto;
-}
-
 /* Дополнительные стили для изображения */
+
 .categories_products_block-right_products_block img {
     display: block;
     width: 100%;
@@ -480,6 +534,7 @@ main {
 /* ========================= */
 /* Pagination Styles         */
 /* ========================= */
+
 .categories_products_pages {
     display: flex;
     justify-content: end;
@@ -510,42 +565,83 @@ main {
 /* ========================= */
 /* Mask Group Styles         */
 /* ========================= */
-.mask-group {
-    display: flex;
-    justify-content: space-between;
+
+.container-flower {
     gap: 30px;
 }
 
-.mask-group-block {
-    width: 585px;
+.container-flower-text {
+    position: relative;
+
+    width: 586px;
     height: 250px;
-    padding: 37px 30px 10px 0;
-    background-color: #fbfbfb;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    background: #fbfbfb;
+    padding: 50px 35px 50px 0;
 }
 
+.container-flower-block-left {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
 
-.mask-group-block p:nth-child(1) {
+.container-flower-block-left p:nth-child(1) {
     font-weight: 900;
     font-size: 18px;
     line-height: 133%;
     text-transform: uppercase;
+    text-align: right;
     color: #3d3d3d;
-    padding-bottom: 9px;
 }
 
-.mask-group-block p:nth-child(2) {
+.container-flower-block-left p:nth-child(2) {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
+    text-align: right;
     color: #727272;
-    padding-bottom: 20px;
 }
 
-.mask-group-block a:nth-child(2){
+.container-flower-block-left a {
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 6px;
+    background: #46a358;
+    padding: 12px 20px;
+    color: #fff;
 
+    margin: 0 0 0 140px;
+
+
+    transition: 0.3s ease-in-out;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+}
+
+.container-flower-text article a:hover {
+    background-color: rgb(60, 117, 30);
+}
+
+.container-flower-text a img {
+    position: relative;
+    top: 2px;
 }
 
 
+.container-flower-block-left-flower-left {
+    position: absolute;
+    right: 299px;
+    bottom: 10px;
+}
 
 
 

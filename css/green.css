@@ -50,24 +50,12 @@
     url('../fonts/Fontspring-DEMO-cerapro-thinitalic.otf') format('otf');
 }
 
-/* ========================= */
-/* Container Styles          */
-/* ========================= */
-.container, .container-flower {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 12px;
-}
 
 /* ========================= */
 /* Header Styles             */
 /* ========================= */
 header {
     margin-bottom: 12px;
-    padding-top: 30px;
 }
 
 /* ========================= */
@@ -77,6 +65,106 @@ header nav ul, .categories_products_block-right_short_by_left_nav ul {
     display: flex;
     gap: 50px;
     align-items: center;
+}
+
+.container, .container-flower {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    font-weight: 400;
+    color: #3d3d3d;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+nav li:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #EDF6EE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 200px;
+    padding: 0;
+}
+
+.dropdown li {
+    position: relative;
+}
+
+.dropdown a:hover {
+    background-color: #1a712a;
+    color: white;
+}
+
+.dropdown-secondary {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #EDF6EE;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    min-width: 200px;
+    padding: 0;
+}
+
+.dropdown-secondary a:hover {
+    background-color: #1a712a;
+    color: white;
+}
+
+.drop:hover .dropdown, .drop-secondary:hover .dropdown-secondary {
+    display: block;
+}
+
+.drop-secondary a::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.dropdown li:last-of-type a:after {
+    content: none;
+}
+
+
+.dropdown-secondary li:nth-child(3) a::before {
+    content: "<";
+    margin-right: 5px;
 }
 
 header nav ul li, .categories_products_block-right_short_by_left_nav ul li {
@@ -89,10 +177,13 @@ header nav ul li a, .categories_products_block-right_short_by_left_nav ul li a {
     color: #3d3d3d;
     line-height: 50px;
     font-size: 16px;
+    text-decoration: none;
 }
 
 header nav ul li a:hover, .categories_products_block-right_short_by_left_nav ul li a:hover {
     font-weight: 700;
+    text-decoration: none;
+
 }
 
 header nav ul li::after {
@@ -108,22 +199,39 @@ header nav ul li::after {
     transition: opacity 0.3s, transform 0.3s linear;
 }
 
-header nav ul li:hover::after, .categories_products_block-right_short_by_left_nav ul li:hover::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: #46a358;
-    opacity: 1;
-}
 
 header nav ul li a::after, .categories_products_block-right_short_by_left_nav ul li a::after {
     display: block;
-    content: attr(title);
+    content: attr(title); /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     font-weight: 700;
     overflow: hidden;
     height: 0;
     transition: opacity 0.3s, transform 0.3s linear;
 }
+
+
+header nav > ul > li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px;
+    height: 2px;
+    background-color: #46a358;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.3s, transform 0.3s linear;
+}
+
+header nav > ul > li:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown li::after, .dropdown-secondary li::after {
+    content: none;
+}
+
 
 header nav ul li .dropdown {
     display: none;
@@ -131,7 +239,7 @@ header nav ul li .dropdown {
     position: absolute;
     top: 10px;
     left: -60px;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 header nav ul li .dropdown a:before {
@@ -152,11 +260,7 @@ header nav ul li .dropdown a {
     position: relative;
 }
 
-header nav ul li .dropdown a:hover {
-    background-color: #1a712a;
-    color: white;
-}
-header nav li .dropdown li:last-of-type a:after{
+header nav li .dropdown li:last-of-type a:after {
     content: "";
     display: inline-block;
     width: 7px;
@@ -166,15 +270,12 @@ header nav li .dropdown li:last-of-type a:after{
     top: 12px;
     background-image: url("../img/arow-header.svg");
 }
+
 header nav ul li .dropdown a:hover:after {
     background-image: url("../img/arow_hover-header.svg");
     transform: rotate(180deg);
 }
 
-header nav ul li.drop:hover .dropdown{
-    display: block;
-
-}
 
 /* ========================= */
 /* Login Container Styles    */
@@ -220,15 +321,17 @@ main {
     margin: auto;
 }
 
+
+/* ========================= */
+/* Article Styles            */
+/* ========================= */
+
 .banner .container {
     padding: 0 0 0 40px;
     margin-bottom: 40px;
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
 }
 
-/* ========================= */
-/* Article Styles            */
-/* ========================= */
 .container article h3 {
     font-weight: 500;
     font-size: 14px;
@@ -298,7 +401,7 @@ main {
 .categories_products_block_left_categories li {
     display: flex;
     justify-content: space-between;
-    gap: 120px;
+    gap: 80px;
 }
 
 .categories_products_block_left p {
@@ -322,9 +425,11 @@ main {
 .categories_products_block_left_categories li a {
     display: inline-block;
     transition: 0.1s;
-    width: 50px;
+    width: 93px;
+    height: 16px;
     color: #3d3d3d;
     white-space: nowrap;
+    padding-left: 20px;
 }
 
 .categories_products_block_left_categories li a:nth-child(1) {

@@ -860,17 +860,12 @@ header .login:hover svg {
     color: #727272;
 }
 
-.footer-block-top-input-block {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
 .footer-block-top-input-block p:first-of-type {
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
+    margin-bottom: 25px;
 }
 
 .footer-block-top-input-block p:nth-child(3) {
@@ -882,19 +877,22 @@ header .login:hover svg {
 
 .input-container {
     display: flex;
-    border-radius: 5px; /* Закругленные углы */
-    overflow: hidden; /* Скрываем выходящие за границы элементы */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 25px;
+
 }
 
 .input-container input {
-    flex-grow: 1; /* Поле ввода занимает доступное пространство */
+    flex-grow: 1;
     padding: 10px;
     border: none;
     outline: none;
+
 }
 
 .input-container button {
-    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    background-color: #4CAF50;
     padding: 12px 25px;
     border: none;
     cursor: pointer;

@@ -1044,7 +1044,7 @@ main {
 footer::before {
     content: "";
     position: absolute;
-    top: 3533px;
+    top: 3512px;
     left: 0;
     right: 0;
     max-width: 1200px;

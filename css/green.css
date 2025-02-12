@@ -206,7 +206,6 @@ header nav ul li a::after, .categories_products_block-right_short_by_left_nav ul
 }
 
 
-
 header nav ul li::after {
     content: "";
     position: absolute;
@@ -807,9 +806,250 @@ main {
     color: #46a358;
 }
 
+/*<!-- ========================= -->*/
+/*<!-- (Footer)  -->*/
+/*<!-- ========================= -->*/
+
+
 .footer-block-top {
     display: flex;
     flex-direction: column;
     background: #FBFBFB;
 }
 
+.footer-block-top-articles {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    flex-direction: row;
+    gap: 62px;
+}
+
+.footer-block-top-articles-block1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+    gap: 11px;
+}
+
+.footer-block-top-articles-block2 {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-block-top-articles-block3 {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+
+.footer-block-top-articles-block1-text1 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+}
+
+.footer-block-top-articles-block1-text1 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+}
+
+.footer-block-top-articles-block1-text2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+}
+
+.footer-block-top-input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-block-top-input-block p:nth-child(2) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+
+.footer-block-top-input-block p:nth-child(3) {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 169%;
+    color: #727272;
+}
+
+.input-container {
+    display: flex;
+    border-radius: 5px; /* Закругленные углы */
+    overflow: hidden; /* Скрываем выходящие за границы элементы */
+}
+
+.input-container input {
+    flex-grow: 1; /* Поле ввода занимает доступное пространство */
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-container a {
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.input-container a:hover {
+    background-color: rgb(60, 117, 30);
+}
+
+.input-container input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #acacac;
+}
+
+.footer-block-middle {
+    display: flex;
+    flex-direction: row;
+    padding: 0 23px 0 22px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+}
+
+.footer-block-middle-address::before {
+    content: "";
+    position: absolute;
+    top: -220px;
+    left: -80px;
+    right: 0;
+    width: 1px;
+    height: 187px;
+    opacity: 10%;
+    background-color: #46a358;
+}
+
+.footer-block-bottom-Social-Media::before {
+    content: "";
+    position: absolute;
+    top: -345px;
+    left: -310px;
+    right: 0;
+    width: 1px;
+    height: 187px;
+    opacity: 10%;
+    background-color: #46a358;
+}
+
+.footer-block-middle-address, .footer-block-middle-mail, .footer-block-middle-call {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 0;
+    gap: 10px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #3d3d3d;
+}
+
+.footer-block-bottom {
+    display: flex;
+    padding: 33px 0 27px 25px;
+    flex-direction: row;
+    gap: 50px;
+    background: #FBFBFB;
+
+}
+
+.footer-block-bottom-myAccount {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-block-bottom-myAccount ul, .footer-block-bottom-Help-Guide ul, .footer-block-bottom-Categories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-block-bottom-Social-Media {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+
+.footer-btm-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+}
+
+.footer-block-bottom-myAccount, .footer-block-bottom-Help-Guide, .footer-block-bottom-Categories, .footer-block-bottom-Social-Media {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+.footer-block-bottom-myAccount p, .footer-block-bottom-Help-Guide p, .footer-block-bottom-Categories p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    padding-bottom: 10px;
+}
+
+.footer-block-bottom-myAccount ul li, .footer-block-bottom-Help-Guide ul li, .footer-block-bottom-Categories ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    display: flex;
+}
+
+.footer-block-bottom-Social-Media-item1 p, .footer-block-bottom-Social-Media-item2 p {
+    display: flex;
+    padding-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 3533px;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 0.1%;
+    opacity: 20%;
+    background-color: #46a358;
+}

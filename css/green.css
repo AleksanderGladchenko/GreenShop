@@ -1028,72 +1028,72 @@ header .login:hover svg {
     background: rgba(70, 163, 88, 0.1);
 }
 
-.price-range-slider {
-    width: 209px;
-}
+/*.price-range-slider {*/
+/*    width: 209px;*/
+/*}*/
 
-.range-values {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 0.9em;
-}
+/*.range-values {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin-bottom: 10px;*/
+/*    font-size: 0.9em;*/
+/*}*/
 
-/* Стилизация контейнера слайдера (дорожки) */
-.ui-slider {
-    position: relative;
-    text-align: left;
-    background: #eee; /* Цвет фона дорожки */
-    border: none; /* Убираем стандартную рамку jQuery UI */
-    border-radius: 5px; /* Закругление углов дорожки */
-    height: 8px; /* Высота дорожки */
-    margin-bottom: 20px; /* Отступ снизу, чтобы отделить от кнопки */
-}
+/*!* Стилизация контейнера слайдера (дорожки) *!*/
+/*.ui-slider {*/
+/*    position: relative;*/
+/*    text-align: left;*/
+/*    background: #eee; !* Цвет фона дорожки *!*/
+/*    border: none; !* Убираем стандартную рамку jQuery UI *!*/
+/*    border-radius: 5px; !* Закругление углов дорожки *!*/
+/*    height: 8px; !* Высота дорожки *!*/
+/*    margin-bottom: 20px; !* Отступ снизу, чтобы отделить от кнопки *!*/
+/*}*/
 
-.ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    width: 20px;
-    height: 20px;
-    cursor: default;
-    border-radius: 50%; /* Делаем ползунки круглыми */
-    background-color: #4CAF50; /* Зеленый цвет ползунков, как на изображении */
-    border: none; /* Убираем стандартную рамку jQuery UI */
-    top: 50%; /* Центрируем ползунки по вертикали дорожки */
-    transform: translateY(-50%); /* Точное вертикальное центрирование */
-    margin-left: -10px; /* Компенсируем ширину ползунка для правильного позиционирования */
-    outline: none; /* Убираем обводку при фокусе */
-    box-shadow: none; /* Убираем тень */
-}
+/*.ui-slider .ui-slider-handle {*/
+/*    position: absolute;*/
+/*    z-index: 2;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    cursor: default;*/
+/*    border-radius: 50%; !* Делаем ползунки круглыми *!*/
+/*    background-color: #4CAF50; !* Зеленый цвет ползунков, как на изображении *!*/
+/*    border: none; !* Убираем стандартную рамку jQuery UI *!*/
+/*    top: 50%; !* Центрируем ползунки по вертикали дорожки *!*/
+/*    transform: translateY(-50%); !* Точное вертикальное центрирование *!*/
+/*    margin-left: -10px; !* Компенсируем ширину ползунка для правильного позиционирования *!*/
+/*    outline: none; !* Убираем обводку при фокусе *!*/
+/*    box-shadow: none; !* Убираем тень *!*/
+/*}*/
 
-.ui-slider .ui-slider-range {
-    position: absolute;
-    z-index: 1;
-    font-size: .7em;
-    display: block;
-    border: 0;
-    background-color: #4CAF50; /* Зеленый цвет выделенного диапазона */
-    border-radius: 5px; /* Закругление углов выделенного диапазона */
-}
+/*.ui-slider .ui-slider-range {*/
+/*    position: absolute;*/
+/*    z-index: 1;*/
+/*    font-size: .7em;*/
+/*    display: block;*/
+/*    border: 0;*/
+/*    background-color: #4CAF50; !* Зеленый цвет выделенного диапазона *!*/
+/*    border-radius: 5px; !* Закругление углов выделенного диапазона *!*/
+/*}*/
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    border: none; /* Убираем лишние рамки jQuery UI */
-    background: none; /* Убираем лишний фон jQuery UI */
-    font-weight: normal;
-    color: #555; /* Цвет текста по умолчанию, можно настроить */
-}
+/*.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {*/
+/*    border: none; !* Убираем лишние рамки jQuery UI *!*/
+/*    background: none; !* Убираем лишний фон jQuery UI *!*/
+/*    font-weight: normal;*/
+/*    color: #555; !* Цвет текста по умолчанию, можно настроить *!*/
+/*}*/
 
-.ui-widget.ui-widget-content {
-    border: none; /* Убираем стандартную рамку виджета jQuery UI */
-}
+/*.ui-widget.ui-widget-content {*/
+/*    border: none; !* Убираем стандартную рамку виджета jQuery UI *!*/
+/*}*/
 
-.filter-button {
-    margin-top: 15px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50; /* Зеленый цвет кнопки, как на изображении */
-    color: white;
-    cursor: pointer;
-}
+/*.filter-button {*/
+/*    margin-top: 15px;*/
+/*    padding: 10px 15px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    background-color: #4CAF50; !* Зеленый цвет кнопки, как на изображении *!*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*}*/
 

@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/green.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Greenshop</title>
 </head>
 <body>
@@ -61,7 +64,7 @@
                 <img src="img/basket.svg" alt="basket">
             </a>
 
-            <a href="#" class="login">
+            <a href="../JS1/Registration/404.html" class="login">
 
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.1601 10.1003H8.12598" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -150,6 +153,50 @@
                 </li>
 
             </ul>
+
+            <!-- ========================= -->
+            <!-- (Slider)  -->
+            <!-- ========================= -->
+
+            <div class="price-range-slider">
+                <div class="range-values">
+
+                    <span id="price-min-display">$39</span>
+                    <span id="price-max-display">$1230</span>
+                </div>
+
+
+                <div id="price-range"
+                <div class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+
+                     style="border-style: solid;
+  border-color: rgba(70, 163, 88, 0.2);
+  border-width: 4px 0 0 0;
+  width: 209px;
+  height: 0px;">
+                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
+
+                          style="left: 0; top: 50%;  background: #46a358;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 15px;
+  height: 15px;">
+
+                    </span>
+                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
+                          style="left: 100%; top: 50%;  background: #46a358;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 15px;
+  height: 15px;"></span>
+                </div>
+                <button class="filter-button">Filter</button>
+            </div>
+
 
             <img src="img/sale.png" alt="sale">
 
@@ -572,11 +619,11 @@
             <div class="footer-block-bottom-Social-Media">
                 <div class="footer-block-bottom-Social-Media-item1">
                     <p>Social Media</p>
-                    <a href="#"><img src="img/footer-facebook.svg" alt="img"></a>
-                    <a href="#"><img src="img/f-inst.svg" alt="img"></a>
-                    <a href="#"><img src="img/f-tw.svg" alt="img"></a>
-                    <a href="#"><img src="img/f-in.svg" alt="img"></a>
-                    <a href="#"><img src="img/f-utb.svg" alt="img"></a>
+                    <a href="#" target="_blank"><img src="img/footer-facebook.svg" alt="fc"></a>
+                    <a href="#" target="_blank"><img src="img/f-inst.svg" alt="inst"></a>
+                    <a href="#" target="_blank"><img src="img/f-tw.svg" alt="tw"></a>
+                    <a href="#" target="_blank"><img src="img/f-in.svg" alt="in"></a>
+                    <a href="#" target="_blank"><img src="img/f-utb.svg" alt="utb"></a>
                 </div>
 
                 <div class="footer-block-bottom-Social-Media-item2">
@@ -596,5 +643,25 @@
 
 
 </main>
+
+
 </body>
+
+<script>
+    $(function () {
+        $("#price-range").slider({
+            range: true,
+            min: 39,
+            max: 1230,
+            values: [39, 1230],
+            slide: function (event, ui) {
+                $("#price-min-display").text("$" + ui.values[0]);
+                $("#price-max-display").text("$" + ui.values[1]);
+            }
+        });
+        $("#price-min-display").text("$" + $("#price-range").slider("values", 0));
+        $("#price-max-display").text("$" + $("#price-range").slider("values", 1));
+    });
+
+</script>
 </html>
